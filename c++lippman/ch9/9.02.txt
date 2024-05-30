@@ -1,0 +1,3 @@
+Exercise 9.2: Define a list that holds elements that are deques that hold ints
+
+Solution: std::list<std::deque<int>> list_of_deque_of_int;

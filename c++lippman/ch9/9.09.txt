@@ -1,0 +1,7 @@
+Exercise 9.9: What is the difference between the begin and cbegin functions?
+
+Solution: begin() returns a iterator, and cbegin() returns a const_iterator type.
+
+It is worth noting that begin() is overloaded, so it too will return a const_iterator
+if the member is const. Thus, the difference arises only in the case when the 
+input member is not const, in which case .cbegin() will force it to be const.

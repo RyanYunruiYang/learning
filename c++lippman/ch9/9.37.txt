@@ -1,0 +1,8 @@
+Exercise 9.37: Why don’t list or array have a capacity member?
+
+Answer:
+array sizes are already fixed and part of the type.
+list has no memory allocation
+
+the general principle is that both of these data types do not do memory management
+and completely use all of their memory

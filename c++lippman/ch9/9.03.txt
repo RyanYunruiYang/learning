@@ -1,0 +1,5 @@
+Exercise 9.3: What are the constraints on the iterators that form iterator ranges?
+
+Answer: Two iterators begin and end form an iterator range if
+- they refer to elements of, or one past the end, of the same container
+- it is possible to reach end by repeatedly incrementing begin

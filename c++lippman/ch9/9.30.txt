@@ -1,0 +1,6 @@
+Exercise 9.30: What, if any, restrictions does using the version of resize that
+takes a single argument place on the element type?
+
+Solution: If only a single argument is passed in, there must be a constructor
+for the type of the object. This works fine for primitives, but within classes
+constrains us to classes with default constructors.

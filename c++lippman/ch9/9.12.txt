@@ -1,0 +1,10 @@
+Exercise 9.12: 
+Explain the differences between the constructor that takes a container to copy
+and the constructor that takes two iterators.
+
+Solution: The difference is that the constructor that takes a container to copy
+needs to take in a container with the same container type and element type;
+
+this is different from the iterator, which is significantly more flexible, 
+where the container types can differ as the iterator is agnostic to this,
+and the element types can differ as long as they are convertible.

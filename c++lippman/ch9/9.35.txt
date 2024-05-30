@@ -1,0 +1,5 @@
+Exercise 9.35: Explain the difference between a vector’s capacity and its size.
+
+Answer: 
+capacity is how much memory is allocated
+size is number of elements
