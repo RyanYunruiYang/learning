@@ -1,0 +1,7 @@
+Exercise 10.40: What kinds of iterators do you think copy requires? What about
+reverse or unique?
+
+Answer:
+- copy: input iterator for src, output iterator for dst
+- reverse: bidirectional iterator (even though in reverse implementations, first only needs ++ and last only needs --)
+- unique: forward iterator

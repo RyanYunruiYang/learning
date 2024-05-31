@@ -1,0 +1,3 @@
+Exercise 10.26: Explain the differences among the three kinds of insert iterators.
+
+Answer: when it=t is called, back_inserter will always insert through c.push_back(t), front_inserter through c.push_front, and inserter through insert.

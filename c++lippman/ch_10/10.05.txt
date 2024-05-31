@@ -1,0 +1,4 @@
+Exercise 10.5: In the call to equal on rosters, what would happen if both rosters held
+C-style strings, rather than library strings?
+
+Answer: Would still work. All that matters is that they are equipped with == signs.

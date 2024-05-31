@@ -1,0 +1,4 @@
+Exercise 10.10: Why do you think the algorithms don’t change the size of
+containers?
+
+Answer: only work with iterators. also this would invalidate their own iterators
