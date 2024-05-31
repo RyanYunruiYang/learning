@@ -1,0 +1,6 @@
+Exercise 11.1: Describe the differences between a map and a vector.
+
+Answer: They're completely different
+- maps have arbitrary key types, whereas vectors use index
+- maps are made up of a list of key,value pairs
+- map is associative container, vector is sequential

@@ -1,0 +1,5 @@
+Exercise 11.27: What kinds of problems would you use count to solve? When might
+you use find instead?
+
+Answer: you should use count when you care about the actual count, and find where the only thing
+that matters is whether or not count==0.

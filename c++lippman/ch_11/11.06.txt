@@ -1,0 +1,5 @@
+Exercise 11.6: Explain the difference between a set and a list. When might you use
+one or the other?
+
+Answer: You should use the set when you want to make quick member ship queries,
+and list when you want to maintain order.
