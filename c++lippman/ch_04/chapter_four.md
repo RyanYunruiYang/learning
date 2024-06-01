@@ -105,4 +105,3 @@ int* ip = ia;
 - lvalue = expression that yields an object or function. any nonconst lvalue can be the left-hand operand of assignment
 - rvalue = expression that yields value, but no location attached
 - compiler is free to evaluate operands in any  order
-- 

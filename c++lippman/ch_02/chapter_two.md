@@ -128,3 +128,4 @@ struct Sales_data {
 - top-level const = object may not be changed
 - low-level = object may be changed but the thing it points to cannot
 - type alias done with `typedef`
+- base type is `int` in `int x = 5, *p = &x`
