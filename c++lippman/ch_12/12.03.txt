@@ -1,0 +1,5 @@
+Exercise 12.3: Does this class need const versions of push_back and pop_back?
+If so, add them. If not, why aren't they needed?
+
+Answer: No, as const versions of push_back and pop_back would not be able to do their job. 
+(while for 12.02 front and back were doable without mutability)

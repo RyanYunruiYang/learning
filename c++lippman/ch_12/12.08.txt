@@ -1,0 +1,9 @@
+Exercise 12.8: Explain what if anything is wrong with the following function.
+
+    bool b() {
+        int* p = new int;
+        // ...
+        return p;
+    }
+
+Answer: memory leak

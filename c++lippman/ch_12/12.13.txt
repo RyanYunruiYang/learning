@@ -1,0 +1,9 @@
+Exercise 12.13: What happens if we execute the following code?
+
+	auto sp = make_shared<int>();
+	auto p = sp.get();
+	delete p;
+
+Answer: This will delete the object that was pointed to by both p and sp.
+However, sp does not know this, and so this will cause memory corruption
+if sp is freed later on.
