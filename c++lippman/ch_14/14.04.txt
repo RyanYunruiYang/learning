@@ -1,0 +1,12 @@
+Exercise 14.4: Explain how to decide whether the following should be class members:
+(a) % (b) %= (c) ++ (d) -> (e) << (f) && (g) == (h) ()
+
+
+(a) % should be a nonmember (symmetric)
+(b) %= should be a member 
+(c) ++ should be a member 
+(d) -> should be a member 
+(e) << should be a nonmember (pg. 557)
+(f) && should not be overloaded
+(g) == should be a nonmember
+(h) () should be a member
