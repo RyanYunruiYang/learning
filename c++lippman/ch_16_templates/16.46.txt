@@ -1,0 +1,8 @@
+Exercise 16.46: Explain this loop from StrVec::reallocate in § 13.5 (p. 530):
+
+	for (size_t i = 0; i != size(); ++i)
+		alloc.construct(dest++, std::move(*elem++));
+
+Answer:
+*elem++ returns an lvalue pointing to the original value of elem before the postfix increment. 
+this is converted to an rvalue reference by std::move, which is then used to construct.

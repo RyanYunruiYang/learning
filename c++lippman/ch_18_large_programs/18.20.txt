@@ -1,0 +1,26 @@
+Exercise 18.20: In the following code, determine which function, if any,
+matches the call to compute. List the candidate and viable functions. What type
+conversions, if any, are applied to the argument to match the parameter in each
+viable function?
+
+	namespace primerLib {
+		void compute();
+		void compute(const void *);
+	}
+	using primerLib::compute;
+	void compute(int);
+	void compute(double, double = 3.4);
+	void compute(char*, char* = 0);
+	void f()
+	{
+		compute(0);
+	}
+
+What would happen if the using declaration were located in main before the call
+to compute? Answer the same questions as before.
+
+Answer: 
+
+Candidate functions: compute(), compute(const void *), compute(int), compute(double, double=3.4), compute(char*, char* = 0)
+Viable: compute(const void *), compute(int), compute(double, double=3.4), compute(char*, char* = 0)
+Chosen: compute(int) because it is an exact match.

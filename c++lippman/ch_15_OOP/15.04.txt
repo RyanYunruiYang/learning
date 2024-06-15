@@ -1,0 +1,12 @@
+Exercise 15.4: Which of the following declarations, if any, are incorrect?
+Explain why.
+
+	class Base { ... };
+	(a) class Derived : public Derived { ... };
+	(b) class Derived : private Base { ... };
+	(c) class Derived : public Base;
+
+
+(a) Incorrect. Classes cannot derive from themselves.
+(b) Fuzzy. Valid, but it's actually a definition not a declaration. But otherwise valid.
+(c) Incorrect. Declarations do not contain derivation lists.

@@ -1,0 +1,33 @@
+Exercise 16.49: Explain what happens in each of the following calls:
+
+	template <typename T> void f(T);
+	template <typename T> void f(const T*);
+	template <typename T> void g(T);
+	template <typename T> void g(T*);
+
+	int i = 42, *p = &i;
+	const int ci = 0, *p2 = &ci;
+	g(42); g(p); g(ci); g(p2);
+	f(42); f(p); f(ci); f(p2);
+
+
+Answer:
+
+- g(42)
+    - This calls g(T). It cannot be interpreted as a pointer and there is one exact match.
+- g(p)
+    - calls g(T*). More specific.
+- g(ci)
+    - calls g(T)
+- g(p2)
+    - calls g(T*). cannot convert pointer to const to normal pointer.
+
+
+- f(42)
+    - this calls f(T). not a pointer.
+- f(p)
+    - this calls f(T), f(const T*) needs a const conversion.
+- f(ci)
+    - this calls f(T). not a pointer.
+- f(p2)
+    - this calls f(const T*), perfect match with T=int.

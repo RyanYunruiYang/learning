@@ -1,0 +1,8 @@
+Exercise 16.51: Determine what sizeof...(Args) and sizeof...(rest) return
+for each call to foo in this section.
+
+Answer:
+- foo(i,s,42,d) should print 3 for both
+- foo(s, 42, "hi") should print 2 for bothk
+- foo(d, s) should print 1 for both
+- foo("hi") should print 0 for both

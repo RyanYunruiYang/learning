@@ -1,0 +1,10 @@
+Exercise 17.9: Explain the bit pattern each of the following bitset objects contains:
+
+	(a) bitset<64> bitvec(32);
+	(b) bitset<32> bv(1010101);
+	(c) string bstr; cin >> bstr; bitset<8>bv(bstr);
+
+Answer:
+    (a) 00000....00000100000
+    (b) 000...000_1111_0110_1001_1011_0101
+    (c) unknown

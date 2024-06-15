@@ -1,0 +1,8 @@
+Exercise 15.24: What kinds of classes need a virtual destructor? What
+operations must a virtual destructor perform?
+
+Answer: Base classes should include a virtual destructor in order for
+the destructor to be dynamic type aware.
+
+The virtual destructor will need to be overridden and reimplemented
+to delete dynamic memory on the heap if it is used.

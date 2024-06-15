@@ -1,0 +1,5 @@
+Exercise 15.8: Define static type and dynamic type.
+
+Answer:
+- Static type is the type known to the compiler
+- Dynamic type is the actual type of the object at the memory in runtime.

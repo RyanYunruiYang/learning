@@ -1,0 +1,14 @@
+Exercise 18.1: What is the type of the exception object in the following throws?
+
+	(a) range_error r("error"); (b) exception *p = &r;
+		throw r;					throw *p;
+
+What would happen if the throw in (b) were written as throw p?
+
+
+Answer:
+    (a) range_error
+    (b) exception
+
+If (b) was instead "throw p", it would instead have type "exception*" 
+This would be risky in the case that r is destroyed.

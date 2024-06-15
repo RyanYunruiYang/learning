@@ -1,0 +1,6 @@
+Exercise 16.17: What, if any, are the differences between a type parameter that
+is declared as a typename and one that is declared as a class? When must
+typename be used?
+
+Answer: Almost always identical. Exception? When using "typename" we have to deal with the
+T::size_type * p ambiguity which is broken towards assuming that size_type is a static member.

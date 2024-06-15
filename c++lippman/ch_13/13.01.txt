@@ -1,0 +1,8 @@
+Exercise 13.1: What is a copy constructor? When is it used?
+
+Answer: A copy constructor is a method of creating an instance of the object.
+It's used when: 
+    - we define variables using an =
+    - pass an object as an argument to a parameter of nonreference type
+    - return an object with a nonreference type
+    - brace initialize the elements in an array or aggregate class
